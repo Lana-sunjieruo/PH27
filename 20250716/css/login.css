@@ -1,0 +1,129 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f5f3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url(../images/loginback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*header*/
+#header{
+  width:80% ;
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px #e72c2c solid;
+}
+#header nav{
+  width: 65%;
+}
+#header nav ul {
+  list-style:none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .4s;
+  
+}
+nav ul a{
+  font-size: 17px;
+  color: #7e298b;
+}
+nav ul a:hover{
+  color: rgb(255, 255, 255);
+}
+.auth-container {
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-container h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #bc44cf; /* 紫色主色调 */
+    font-weight: 600;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form label {
+    text-align: left;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.auth-form input {
+    padding: 12px 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.auth-form input:focus {
+    border-color: #7e298b;
+}
+
+.btn {
+    background-color: #7e298b;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #63206a;
+}
+
+.switch-page {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.switch-page a {
+    color: #b241c3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式适配小屏幕 */
+@media (max-width: 450px) {
+    .auth-container {
+        padding: 30px 20px;
+    }
+
+    .auth-form input, .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

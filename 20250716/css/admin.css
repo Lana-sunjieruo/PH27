@@ -1,0 +1,148 @@
+/* admin.css - 管理者后台样式 */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+/*header*/
+#header{
+  width:80% ;
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px #000000 solid;
+}
+#header nav{
+  width: 65%;
+}
+#header nav ul {
+  list-style:none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .4s;
+  
+}
+nav ul a{
+  font-size: 17px;
+  color: #7e298b;
+}
+nav ul a:hover{
+  color: rgb(0, 0, 0);
+}
+main {
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.productbox {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 80px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.productbox h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.variant-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.variant-form input[type="number"],
+.variant-form input[type="text"] {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.variant-form input[type="file"] {
+  padding: 3px;
+}
+
+.btn-update {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background-color: #218838;
+}
+
+span[style*="background-color"] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h1, h2, h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.line{
+  color: #72727242;
+  margin: 30px;
+}
+.alldelete {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* ボタンらしい見た目 */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e63946; /* 赤系 */
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* ホバー時の効果 */
+.alldelete:hover {
+  background-color: #c82333;
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* 押したとき */
+.alldelete:active {
+  background-color: #a71d2a;
+  transform: translateX(-50%) scale(0.95);
+}
+
+.addproducts{
+  margin-bottom: 100px;
+}

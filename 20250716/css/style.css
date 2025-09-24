@@ -1,0 +1,166 @@
+@charset "utf-8";
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+body{
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+ 
+}
+a {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  color: black;
+}
+p{
+  text-align: justify;
+}
+/*header*/
+#header{
+  width:80% ;
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.835) ;
+  border-bottom: 2px #6c1818 solid;
+}
+#header nav{
+  width: 65%;
+}
+#header nav ul {
+  list-style:none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .4s;
+  
+}
+nav ul a{
+  font-size: 17px;
+  color: #7e298b;
+}
+nav ul a:hover{
+  color: rgb(0, 0, 0);
+}
+/*main*/
+main{
+  width: 100%;
+  height: auto;
+  margin-top: 250px;
+}
+main .backlogo{
+  margin:0 auto;
+  position: relative;
+}
+main .backlogo img{
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: -1;
+ top:-180px;
+}
+main h1{
+  text-align: center;
+  font-size: 23px;
+  color: rgb(61, 44, 77);
+ 
+}
+main .product-list{
+   display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 每行三个商品 */
+  gap: 10px; /* 商品之间的间距 */
+ 
+}
+
+main .productbox{
+  width: 300px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  margin-top: 50px;
+}
+main .productbox .text{
+height: 60px;
+color: #7a677d;
+}
+main .productbox .pricetext{
+ font-weight: 200;
+ font-size: 15px;
+ color: #df2f5b;
+ text-align: center;
+}
+
+main .productbox .color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  border: 1px solid #333;
+  cursor: pointer;
+  }
+  .color-box[data-color="黒"] { background-color: black; }
+  .color-box[data-color="白"] { background-color: white; border: 1px solid #999; }
+  .color-box[data-color="ピンク"] { background-color: pink; }
+  .color-box[data-color="緑"] { background-color: green; }
+  .color-box[data-color="青"] { background-color: rgb(10, 131, 212); }
+
+
+/* 库存为0：置灰 */
+.color-box.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border: 1px dashed #999;
+}
+
+/* 当前选中的颜色高亮 */
+.color-box.active {
+  border: 2px solid rgb(255, 47, 220) !important;
+}
+
+/*button cart*/
+/* カートに入れるボタン */
+.cart-form button,
+.cart-button {
+    background-color: #7e298b;       /* 紫色主色 */
+    color: #fff;                     /* 文字白色 */
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.cart-form button:hover,
+.cart-button:hover {
+    background-color: #a13fd1;       /* 鼠标悬停变亮 */
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+.cart-form button:active,
+.cart-button:active {
+    transform: translateY(2px);      /* 点击按钮下沉效果 */
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+
+

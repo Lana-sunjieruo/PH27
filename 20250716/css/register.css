@@ -1,0 +1,127 @@
+/* 页面整体居中 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../images/tourokuback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*header*/
+#header{
+  width:80% ;
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px #e72c2c solid;
+}
+#header nav{
+  width: 65%;
+}
+#header nav ul {
+  list-style:none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .4s;
+  
+}
+nav ul a{
+  font-size: 17px;
+  color: #7e298b;
+}
+nav ul a:hover{
+  color: rgb(255, 255, 255);
+}
+/* 容器 */
+.auth-container {
+  padding: 40px 30px;
+  width: 350px;
+}
+
+/* 标题 */
+.auth-container h1 {
+  text-align: center;
+  color: #bc44cf;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* 表单布局 */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 标签 */
+.auth-form label {
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: #cecece;
+}
+
+/* 输入框 */
+.auth-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #7e298b;
+  box-shadow: 0 0 5px rgba(126,41,139,0.3);
+}
+
+/* 按钮 */
+.auth-form .btn {
+  padding: 12px;
+  background-color: #7e298b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.auth-form .btn:hover {
+  background-color: #5a1d75;
+}
+
+/* 提示信息 */
+.auth-container p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* 页面切换链接 */
+.auth-container .switch-page {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-container .switch-page a {
+  color: #7e298b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-container .switch-page a:hover {
+  text-decoration: underline;
+}
